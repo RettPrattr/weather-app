@@ -1,0 +1,34 @@
+.WeatherTable {
+    color:  #DCDCDC;
+    .categories {
+        display: flex;
+        flex-direction: row;
+        div  {
+            cursor: pointer;
+            h2 {
+                padding: 5px 0;
+            }
+            &.active {
+                h2 {
+                    border-bottom: 1px solid #DCDCDC;
+                }
+            }
+        }
+        :first-child {
+            margin-right: 15px;
+        }
+    }
+
+    tr {
+        border-bottom: 10px solid #ccc !important; 
+      }
+
+    th, td {
+        text-align: left;
+        font-size: 20px;
+        width: 300px;
+        padding-bottom: 10px;
+        
+    }
+    
+}

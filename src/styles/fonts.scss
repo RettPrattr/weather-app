@@ -1,0 +1,27 @@
+$font-name: 'ProximaNova';
+
+
+
+@font-face {
+  font-family: $font-name;
+  font-weight: 300;
+  src: url('../fonts/Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-name;
+  font-weight: 400;
+  src: url('../fonts/Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-name;
+  font-weight: 600;
+  src: url('../fonts/Bold.woff') format('woff');
+}
+
+
+a, p, h1, h2, h3, body, input, button, span, div, ul, li, label, td, th {
+  font-family: $font-name;
+}
+
