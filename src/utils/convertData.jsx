@@ -39,7 +39,7 @@ function convertData(hourlyData) {
       monthData.temperature_max = Math.max(monthData.temperature_max, temperature_2m[index]);
   
       const day = date.getDate();
-      if (rain[index] > 1 && !monthData.days.has(day)) {
+      if (rain[index] > 0.1 && !monthData.days.has(day)) {
         monthData.days.add(day);
         monthData.rainy_days_count += 1;
       }
@@ -48,19 +48,6 @@ function convertData(hourlyData) {
       });
 
     });
-
-    const targetYear = 2023;
-  const targetMonth = 8;
-
-
-  const monthYearKey = `${targetYear}-${targetMonth}`;
-  const monthData = monthlyData[monthYearKey];
-
-  if (monthData) {
-    console.log(JSON.stringify(monthData, null, 2)); 
-  }
-
-
 
 
   
