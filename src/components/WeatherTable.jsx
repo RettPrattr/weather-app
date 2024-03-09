@@ -51,7 +51,7 @@ const WeatherTable = () => {
                 <h2>Обзор</h2>
               </div>
               <div onClick={() => handlerCategory()} className={"chart" + (isShowChart && ' active ')}>
-                <h2>Графики</h2>
+                <h2>График</h2>
               </div>
           </div>
         {isShowChart ? <TemperatureChart weatherData={weatherData} /> : <table className='table'>
